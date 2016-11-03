@@ -1,5 +1,5 @@
 source("SloveTr.R")
-myCholeshey<-function(A,b,EPS = 2.2204*10^(-6)){
+myCholeskey<-function(A,b,EPS = 2.2204*10^(-6)){
    n<-nrow(A)
    for (r in 1:n) {
       if(r>1){
@@ -22,9 +22,3 @@ myCholeshey<-function(A,b,EPS = 2.2204*10^(-6)){
    x<-SloveTr(t(B),y)
    return(x)
 }
-
-
-##test##
-A<-matrix(c(4,-1,1,-1,17/4,11/4,1,11/4,3.5),nrow = 3,byrow = T)
-b<-c(0,1,0)
-myCholeshey(A,b)

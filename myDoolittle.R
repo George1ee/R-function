@@ -22,8 +22,3 @@ myDoolittle<-function(A,b,EPS = 2.2204*10^(-6)){
    x<-SloveTr(B,A[,n+1])
    return(x)
 }
-
-##test##
-A<-matrix(c(2,10,0,-3,-3,-4,-12,13,1,2,3,-4,4,14,9,-13),nrow = 4,byrow = T)
-b<-c(10,5,-2,7)
-myDoolittle(A,b)
